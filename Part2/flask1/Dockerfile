@@ -2,10 +2,10 @@
 FROM python:3.7-alpine 
 
 # Select file called 'app' as the docker working directory
-WORKDIR /app
+WORKDIR /app1
 
 # Copy all contents of file 'app' into the docker working directory
-COPY . /app
+COPY . /app1
 
 # Installing dependencies 
 RUN pip install -r requirements.txt
@@ -14,5 +14,5 @@ RUN pip install -r requirements.txt
 EXPOSE 5000
 
 # Terminal commands run to deploy app
-CMD ["python", "app.py"]
+CMD ["python", "app1.py"]
 

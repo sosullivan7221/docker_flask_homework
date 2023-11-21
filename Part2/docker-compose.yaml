@@ -1,0 +1,26 @@
+# Python Version
+version: '3'
+services:
+
+  flask_app_1:
+    # Folder to pull first app from
+    build: ./flask1
+
+    # Port to open flask app on
+    ports:
+      - "5001:5000"
+
+    # App to run within flask folder
+    volumes:
+      - ./flask1:/app1
+  flask_app_2:
+    # Folder to pull second app from
+    build: ./flask2
+
+    # Port to open second flask app on
+    ports:
+      - "5002:5000"
+    
+    # App to run within flask folder
+    volumes:
+      - ./flask2:/app2
