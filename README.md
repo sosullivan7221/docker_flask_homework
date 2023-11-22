@@ -21,4 +21,7 @@ Docker-compose works to combine multiple docker files into one instance so they 
 2. To build the image, use: docker-compose build
 3. To run the image in a container, use: docker-compose run. You should be able to preview your app and change the port to swap between your Flask apps.
 4. To remove all instances, use: docker-compose down -v --rmi all --remove-orphans
-   
+
+## Final Thoughts
+
+Docker seemed easy to use and interact with. The commands are intuitive, and I had no issues completing any of the objectives.
